@@ -3,23 +3,27 @@
 /**
  * print_diagonal - prints a diagonal line of length n
  * @n: length of diagonal
- *
- * Return: void
+ * Description: Can only use _putchar to print
  */
-
 void print_diagonal(int n)
 {
-	int a, b;
+	int c, i;
 
-	if (n <= 0)
-		_putchar('\n');
-	for (a = 0; a < n; a++)
+	c = 0;
+
+	while (n > 0)
 	{
-		for (b = 0; b < a; b++)
+		i = c;
+		while (i > 0)
 		{
 			_putchar(' ');
+			i--;
 		}
-		_putchar(' ');
+		_putchar('\\');
 		_putchar('\n');
+		c++;
+		n--;
 	}
+	if (c < 1)
+		_putchar('\n');
 }
