@@ -5,7 +5,7 @@
  * @s: first occurrence of string to be located
  * @accept: string to be located
  *
- * Return: Returns matching character in s or null 
+ * Return: Returns matching character in s or null
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
 
 	while (*s)
 	{
-		for (i= 0; accept[i]; i++)
+		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
 			{
