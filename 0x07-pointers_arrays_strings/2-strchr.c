@@ -10,14 +10,19 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; *(s + i); i++)
+	while (*s)
 	{
-		if (*(s + i) == c)
-			return (s + 1);
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
 	}
-	if (*(s + i) == c)
-		return (s + i);
-	return (0);
+
+	if (!c)
+	{
+		return (s);
+	}
+	return (NULL);
+
 }
