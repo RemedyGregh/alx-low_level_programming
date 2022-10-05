@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
-* free_grid - Deallocates memory of a 2D grid
-* @grid: Integer argument
-* @height: Integer argument
+* free_grid - frees a 2D grid created in alloc_grid
+* @grid: pointer to pointer
+* @height: height of grid
 *
-* Return: Nothing
+* Return: void
 */
 void free_grid(int **grid, int height)
 {

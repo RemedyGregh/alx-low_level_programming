@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int mul = 0;
 	int num1 = 0, num2 = 0;
 
-	if (argc - 1 < 2)
+	if (argc - 1 < 2 || argc - 1 > 2)
 	{
 		printf("Error\n");
 		return (1);
